@@ -26,7 +26,7 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		if direction == 0:
 			$AnimatedSprite2D.play("idle")
-		elif direction != 0:
+		else:
 			$AnimatedSprite2D.play("run")
 	else:
 		$AnimatedSprite2D.play("jump")
